@@ -24,9 +24,10 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = 'o3soeno0y@yzg4-i^y&v1u!--5#q8@8!ak)%5v0ieoz_h8oyqx'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+#DEBUG = True
 
-ALLOWED_HOSTS = []
+DEBUG = bool(int(os.environ.get('DEBUG',1)))
+ALLOWED_HOSTS = ['*','']
 
 
 # Application definition
