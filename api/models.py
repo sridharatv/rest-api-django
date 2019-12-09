@@ -3,16 +3,18 @@ from django.contrib.auth.models  import User, Group
 
 # Create your models here.
 
+"""
 class CustomUser(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     def __str__(self):
-        return self.user.username
+        return self.user.name
 
 class CustomGroup(models.Model):
     group = models.OneToOneField(Group, on_delete=models.CASCADE)
 
     def __str__(self):
         return self.group.name
+"""
 
 
 class Device(models.Model):

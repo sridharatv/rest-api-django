@@ -1,6 +1,6 @@
 from rest_framework  import serializers
 from django.contrib.auth.models import User, Group
-from .models import Device, CustomUser, CustomGroup
+from .models import Device #, CustomUser, CustomGroup
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
