@@ -19,7 +19,7 @@ from django.conf.urls import url, include, re_path
 from rest_framework import routers
 
 #from api import views
-from device import views as dev_view
+#from device import views as dev_view
 
 router = routers.DefaultRouter()
 #router.register(r'users', views.UserViewSet)
@@ -27,7 +27,8 @@ router = routers.DefaultRouter()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('device.urls')),
+    path('', include('profile_api.urls')),
+#    path('', include('device.urls')),
 #    url(r'', include('api.urls')),
 ]
 
